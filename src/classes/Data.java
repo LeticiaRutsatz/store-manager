@@ -1,4 +1,5 @@
 package classes;
+
 public class Data {
     private int dia;
     private int mes;
@@ -18,7 +19,7 @@ public class Data {
     }
 
     private int diasNoMes(int mes, int ano) {
-        boolean bissexto = (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
+        boolean bissexto = verificaAnoBissexto();
         
         if (mes == 2 && bissexto) {
             return 29;
@@ -50,6 +51,11 @@ public class Data {
 
     public void setAno(int ano) {
         this.ano = ano;
+    }
+
+    // Método para verificar se o ano é bissexto
+    public boolean verificaAnoBissexto() {
+        return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
     }
 
     // Método toString para retornar uma representação em string da data

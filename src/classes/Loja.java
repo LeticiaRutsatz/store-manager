@@ -24,7 +24,7 @@ public class Loja {
         return nome;
     }
 
-    public void setNome(int quantidadeFuncionarios) {
+    public void setQuantidadeFuncionarios(int quantidadeFuncionarios) {
         this.quantidadeFuncionarios = quantidadeFuncionarios;
     }
 
