@@ -53,19 +53,28 @@ public class Principal {
         System.out.print("Digite o salário base do funcionário da loja: ");
         double salarioBaseFuncionario = scanner.nextDouble(); 
 
+        System.out.print("Digite a quantidade de estoque da loja: ");
+        int estoqueProdutos = scanner.nextInt();
+
         System.out.println("Digite os detalhes do endereço da loja:");
         System.out.print("Nome da rua: ");
         String nomeRua = scanner.next();
+
         System.out.print("Cidade: ");
         String cidade = scanner.next();
+
         System.out.print("Estado: ");
         String estado = scanner.next();
+
         System.out.print("País: ");
         String pais = scanner.next();
+
         System.out.print("CEP: ");
         String cep = scanner.next();
+
         System.out.print("Número: ");
         String numero = scanner.next();
+
         System.out.print("Complemento: ");
         String complemento = scanner.next();
 
@@ -74,14 +83,16 @@ public class Principal {
         System.out.println("Digite os detalhes da data de fundação da loja:");
         System.out.print("Dia: ");
         int dia = scanner.nextInt();
+
         System.out.print("Mês: ");
         int mes = scanner.nextInt();
+
         System.out.print("Ano: ");
         int ano = scanner.nextInt();
 
         Data dataFundacao = new Data(dia, mes, ano);
 
-        Loja loja = new Loja(nomeLoja, quantidadeFuncionarios, salarioBaseFuncionario, enderecoLoja, dataFundacao);
+        Loja loja = new Loja(nomeLoja, quantidadeFuncionarios, salarioBaseFuncionario, enderecoLoja, dataFundacao, estoqueProdutos);
         return loja;
     }
 
@@ -97,8 +108,10 @@ public class Principal {
         System.out.println("Digite os detalhes da data de validade do produto:");
         System.out.print("Dia: ");
         int dia = scanner.nextInt();
+
         System.out.print("Mês: ");
         int mes = scanner.nextInt();
+        
         System.out.print("Ano: ");
         int ano = scanner.nextInt();
 

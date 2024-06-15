@@ -3,8 +3,8 @@ package classes;
 public class Cosmetico extends Loja {
     private double taxaComercializacao;
 
-    public Cosmetico(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data data, double taxaComercializacao) {
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+    public Cosmetico(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data data, double taxaComercializacao, int maxProdutos) {
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, maxProdutos);
         this.taxaComercializacao = taxaComercializacao;
     }
 

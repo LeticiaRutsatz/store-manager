@@ -3,8 +3,8 @@ package classes;
 public class Vestuario extends Loja {
     private boolean produtosImportados;
 
-    public Vestuario(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data data, boolean produtosImportados) {
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+    public Vestuario(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data data, boolean produtosImportados, int maxProdutos) {
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, maxProdutos);
         this.produtosImportados = produtosImportados;
     }
 
