@@ -92,6 +92,8 @@ public class Principal {
 
         Data dataFundacao = new Data(dia, mes, ano);
 
+        System.out.println("Dados da loja criada!!");
+
         Loja loja = new Loja(nomeLoja, quantidadeFuncionarios, salarioBaseFuncionario, enderecoLoja, dataFundacao, estoqueProdutos);
         return loja;
     }
@@ -111,7 +113,7 @@ public class Principal {
 
         System.out.print("Mês: ");
         int mes = scanner.nextInt();
-        
+
         System.out.print("Ano: ");
         int ano = scanner.nextInt();
 

@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Arrays;
+
 public class Loja {
     private String nome;
     private int quantidadeFuncionarios;
@@ -118,18 +120,11 @@ public class Loja {
 
     @Override
     public String toString() {
-        StringBuilder produtosStr = new StringBuilder();
-        for (Produto produto : estoqueProdutos) {
-            if (produto != null) {
-                produtosStr.append(produto.toString()).append("\n");
-            }
-        }
-
         return "Nome da loja: " + nome + "\n" +
                "Quantidade de funcionários: " + quantidadeFuncionarios + "\n" +
                "Salário base dos funcionários: " + salarioBaseFuncionario + "\n" +
                "Endereço da loja: " + endereco + "\n" +
                "Data de fundação da loja: " + dataFundacao + "\n" +
-               "Produtos no estoque:\n" + produtosStr.toString();
+               "Produtos no estoque:\n" + Arrays.toString(estoqueProdutos);
     }
 }
